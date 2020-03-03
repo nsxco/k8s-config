@@ -5,6 +5,8 @@ metadata:
   namespace: eks-example
   labels:
     app: eks-example
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
 spec:
   type: LoadBalancer
   ports:
